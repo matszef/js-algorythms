@@ -6,7 +6,9 @@ const letterFrequency = (randomText) => {
 
     for (let letter of randomText) {
         if (letter in frequency) {
-            console.log(letter)
+            frequency[letter] = frequency[letter] + 1
+        } else {
+            frequency[letter] = 1
         }
     }
 }
